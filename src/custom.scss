@@ -1,1 +1,15 @@
 @import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/mixins';
+
+.nav-link {
+    cursor: pointer;
+}
+
+@include media-breakpoint-up (sm) {
+    .nav-link:hover {
+        border-bottom: 1px solid white;
+    }
+}
